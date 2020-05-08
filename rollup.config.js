@@ -8,12 +8,12 @@ const modules = fs.readdirSync(path.join(__dirname, './src'))
 	  return {
       input: `src/${module}/${module}.js`,
       output: [
-				{
-          file: `dist/${module}.js`,
-          format: 'cjs'
-        },
+				//{
+        //  file: `dist/${module}.js`,
+        //  format: 'cjs'
+        //},
         {
-          file: `dist/${module}.es.js`,
+          file: `dist/${module}.js`,
           format: 'es'
         }
       ]
@@ -25,12 +25,12 @@ export default [
   {
     input: 'src/index.js',
     output: [
+			//{
+      //	file: 'dist/index.js',
+      //	format: 'cjs'
+    	//},
 			{
       	file: 'dist/index.js',
-      	format: 'cjs'
-    	},
-			{
-      	file: 'dist/index.es.js',
       	format: 'es'
     	},
 		]
