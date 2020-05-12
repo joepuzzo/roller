@@ -2,13 +2,10 @@
   "name": "@joepuzzo/roller",
   "version": "1.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "files": [
-    "dist/"
-  ],
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config"
+    "version": "npm run build",
+    "build": "rollup --config && cp package.json README.md dist/"
   },
   "keywords": [],
   "author": "",
