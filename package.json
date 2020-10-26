@@ -2,15 +2,17 @@
   "name": "@joepuzzo/roller",
   "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "version": "npm run build",
-    "build": "rollup --config && cp package.json README.md dist/"
+    "build": "rm -rf dist && rollup --config && cp src/index.js dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "rollup": "^2.8.2"
-  }
+  },
+  "sideEffects": false
 }
