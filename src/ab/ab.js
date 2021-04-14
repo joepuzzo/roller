@@ -1,2 +1,9 @@
-export { default as a } from '../a/a.js';
-export { default as b } from '../b/b.js';
+import a from '../a/a';
+import b from '../b/b';
+
+const ab = () => {
+  a();
+  b();
+}
+
+export default ab;
