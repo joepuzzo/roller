@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "scripts": {
     "version": "npm run build",
-    "build": "rm -rf dist && rollup --config && cp src/index.js dist/index.js"
+    "build": "rm -rf dist && rollup --config"
   },
   "keywords": [],
   "author": "",
